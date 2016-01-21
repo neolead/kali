@@ -1,0 +1,35 @@
+Thank you. You can now obtain the newest Nessus plugins at : 
+https://plugins.nessus.org/v2/nessus.php?f=all-2.0.tar.gz&u=0e53b0f4ceaeeb7d012341c1b9ff2f51&p=1f39a379ebd6ca4e615c92e6be46573c 
+
+You can copy the following license and paste it into the Nessus console to proceed:
+-----BEGIN TENABLE LICENSE-----
+QnhqUHRaT2VQa3k4ejdWdE5ybUtrNTVKbFRJalFlZDdKVi8zTFhTelFzMlFxanFzSFcwdVN1ZWdv
+U2pnSnZZTkNwNjIxRFpsWklVWVJyOVBMWVdURHB1SGlQMncyQk4zWFQwK0FZbXZRUVJqQ3lqMWhI
+RFd4UGNlKzI2SGkvV1VGaFdSTyt4MFhuYTBDWEtTOGZ6RlF2c0pFdFllekdIYURZWWtiZXNCblhW
+a3Vib0dBVlFSUDI1L2U3QmNQanZ6OU1uclU5bllmcUcyVWVrRnBzQnVaSWMvYXZHZnBUYzA3RnU4
+M2EzdFVQRXk1Z1RvTWMrcXgyanlQcDVVZ1RKOE1GRTBQdWd3bytZc2lLb2FVT0lkWU5TbTdCb3RF
+MTUrYXpHZDVTcytLVEhIdkpueXNNcXdlWE9scUVmZkxvSW1OWDlLZXJxSTRMam8vWFIyejBIUlUx
+MCs4bGRETmxnTHhvRTdWZ0hnVTdWRHpEWVhMdUx1WWF3L0FySmR2SmFKNzRRK3FHNm5sTERYb1RD
+L0lVWkVjNWZVY1o1QUo3Y203bkJyTi9sSkZJajFzcmtwWFFXNFBydS91aWx4RlhsQmxJOTAxSDg3
+TkpzQ09zbXBRcWNkQ203R0dDR3EraDhJWkFQbUdFWEMxdzdkUkUvSzJxRlNHaHFEVFN6eDFwcjAx
+bXhkbEh4S0FCbE52NmR1Z1paTTFaaTE3MThTWUludm00Wmdab3VQVW5NRUhJUk9xVUJnc01YWDdQ
+Q04wQ2JYNlF1ZGhFVVlseEZjZk8zMUJucUlHa3dMNEQ1bWJrU1JLcDUwd1ZwZW41Wk5IYmxUWlMw
+azdZSU1iNExML0pRSkdBTVJRdlJJeHNsWTZRRGpQWUJ6YmRtWWFBY1hETURkOTRmQUdrNGNIWjg9
+DQp7ImFjdGl2YXRpb25fY29kZSI6IjAxQjktODREMC1GODhGLUZGRUMtMTg5NSIsInVwZGF0ZV9w
+YXNzd29yZCI6IjFmMzlhMzc5ZWJkNmNhNGU2MTVjOTJlNmJlNDY1NzNjIiwibmFtZSI6Ik5lc3N1
+cyBIb21lIiwidXBkYXRlX3VybCI6Imh0dHBzOi8vcGx1Z2lucy5uZXNzdXMub3JnL3YyL25lc3N1
+cy5waHAiLCJ0eXBlIjoiaG9tZSIsImV4cGlyYXRpb25fZGF0ZSI6MTYxMTAzOTI4NiwidXBkYXRl
+X2xvZ2luIjoiMGU1M2IwZjRjZWFlZWI3ZDAxMjM0MWMxYjlmZjJmNTEiLCJkcm0iOiI4MTcwMWFj
+M2ZhMGFlMGY5MzVhMDNkMjYxZTZkNDkzYSJ9
+-----END TENABLE LICENSE-----
+
+
+OR 
+
+You may also install the license using Nessus command line tools:
+/opt/nessus/sbin/nessuscli fetch --register-offline nessus.license(Linux/Unix)
+C:\\Program Files\\Tenable\\Nessus\\nessuscli.exe fetch --register-offline nessus.license (Windows Vista/7/8/2008/2012)
+/Library/Nessus/run/sbin/nessuscli fetch --register-offline nessus.license (Mac OS X)
+/usr/local/nessus/sbin/nessuscli fetch --register-offline nessus.license (FreeBSD)
+
+nessus.license 
