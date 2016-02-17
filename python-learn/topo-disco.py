@@ -11,4 +11,5 @@ nm.scan(hosts = hostlist, arguments = '-PU -sn')
 for host in nm.all_hosts():
     print "host: %s" % host
 
+#调用外部程序
 os.system('./runsnmp')
