@@ -6,7 +6,7 @@ ylabels   = []
 data_nums   = []
 N = 12
 # Read data
-for line in file('./big-data.txt'):
+for line in file('./barh-data.txt'):
     info = line.split('=')
     # print "info, %s->%s" % (info[0], info[1])
     ylabels.append(info[0])
