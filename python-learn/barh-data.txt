@@ -1,0 +1,12 @@
+1 Topface              =2000
+2 Uber                 =5
+3 Premera Blue Cross   =1100
+4 Metropolitan State   =16
+5 Adult Friendfinder   =390
+6 LastPass             =700
+7 Ashley Madison       =3700
+8 Damai.cn             =600
+9 Xcode                =10000
+10 Netease             =10000
+11 VTech               =500
+12 MacKeeper           =1300
